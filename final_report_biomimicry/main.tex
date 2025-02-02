@@ -1,0 +1,109 @@
+%-------------------------------------------------------------------------------
+% LATEX TEMPLATE ARTIKEL
+%-------------------------------------------------------------------------------
+% Dit template is voor gebruik door studenten van de de bacheloropleiding 
+% Informatica van de Universiteit van Amsterdam.
+% Voor informatie over schrijfvaardigheden, zie 
+%                               https://practicumav.nl/schrijven/index.html
+%
+%-------------------------------------------------------------------------------
+%	PACKAGES EN DOCUMENT CONFIGURATIE
+%-------------------------------------------------------------------------------
+
+\documentclass{uva-inf-article}
+\usepackage[english]{babel}
+
+\usepackage[style=apa]{biblatex}
+\addbibresource{references.bib}
+
+%-------------------------------------------------------------------------------
+%	GEGEVENS VOOR IN DE TITEL, HEADER EN FOOTER
+%-------------------------------------------------------------------------------
+
+% Geef je artikel een logische titel die de inhoud dekt.
+\title{The Albatross: A Biomimetic Drone for Enhanced Search and Rescue Missions}
+
+% Vul de naam van de opdracht in zoals gegeven door de docent en het type 
+% opdracht, bijvoorbeeld 'technisch rapport' of 'essay'.
+\assignment{Final report}
+\assignmenttype{}
+
+% Vul de volledige namen van alle auteurs in en de corresponderende UvAnetID's.
+\authors{Simon Blom; Sameh Mikhail; Romy Schardam}
+\uvanetids{14630591; 14003597; 15907635}
+\studies{Artificial Intelligence; Physics and Astronomy; Mechanical Engineering}
+
+% Vul de naam van je tutor, begeleider (mentor), of docent / vakcoördinator in.
+% Vermeld in ieder geval de naam van diegene die het artikel nakijkt!
+\tutor{}
+\mentor{Mike Meulendijks}
+\docent{Pim Linnebank; Morten Strømme; Mimi den Uijl}
+
+% Vul hier de naam van je tutorgroep, werkgroep, of practicumgroep in.
+\group{5}
+
+% Vul de naam van de cursus in en de cursuscode, te vinden op o.a. DataNose.
+\course{Minor Science, Technology \& Innovation: Biomimicry}
+\courseid{5142DPB30Y}
+
+% Dit is de datum die op het document komt te staan. Standaard is dat vandaag.
+\date{\today}
+
+%-------------------------------------------------------------------------------
+%	VOORPAGINA 
+%-------------------------------------------------------------------------------
+
+\begin{document}
+\maketitle
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.75\linewidth]{images/albatrone.jpg}
+    % \caption{Caption}
+    % \label{fig:enter-label}
+\end{figure}
+\newpage
+
+%-------------------------------------------------------------------------------
+%	INHOUDSOPGAVE EN ABSTRACT
+%-------------------------------------------------------------------------------
+% Niet toevoegen bij een kort artikel, zeg minder dan 10 pagina's!
+
+%TC:ignore
+\tableofcontents
+%TC:endignore
+
+%-------------------------------------------------------------------------------
+%	INHOUD
+%-------------------------------------------------------------------------------
+% Hanteer bij benadering IMRAD: Introduction, Method, Results, Discussion.
+
+\include{parts/abstract}
+
+\include{parts/introduction}
+
+% \include{parts/theoretical_framework}
+
+\include{parts/evolution_of_prototype_design}
+
+\include{parts/testing}
+
+\include{parts/conclusion_and_discussion}
+
+
+%-------------------------------------------------------------------------------
+%	REFERENTIES
+%-------------------------------------------------------------------------------
+
+\printbibliography
+
+%-------------------------------------------------------------------------------
+%	BIJLAGEN 
+%-------------------------------------------------------------------------------
+
+%TC:ignore
+\appendix 
+\include{parts/documentation}
+%TC:endignore
+
+%-------------------------------------------------------------------------------
+\end{document}

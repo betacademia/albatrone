@@ -51,7 +51,7 @@ drag_result = drag_model.fit(
     drag_central, angle=angles, params=drag_parameters, weights=D_inv_err
 )
 
-print("Lift fit results:" + lift_result.fit_report())
+# print("Lift fit results:" + lift_result.fit_report())
 print("Drag fit results:" + drag_result.fit_report())
 
 # Plotting
